@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE
+
+# Update Health End-point and Enable Metrics End-point to be in compliance with kubeless >> https://github.com/kubeless/kubeless/blob/master/docs/runtimes.md
+endpoints:
+  health:
+    id: healthz
+  metrics:
+    sensitive: false
