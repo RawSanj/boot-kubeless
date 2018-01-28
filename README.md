@@ -127,7 +127,7 @@ Deploy the Spring Boot app *boot-kubeless-kafka* as a Function using docker imag
 ```sh
 $ kubeless function deploy boot-kubeless-kafka --runtime-image rawsanj/boot-kubeless-kafka --trigger-topic boot-topic --env KUBELESS_KAFKA_SVC=kafka --env  KUBELESS_KAFKA_NAMESPACE=kubeless
 ```
-**Note:** If you have your own Kafka Cluster running on K8S, update the namespace and service name in below environment variables.
+**Note:** If you have your own Kafka Cluster running on K8S, update the namespace and service name in the environment variables above.
 
 
 #### Test the function: 
