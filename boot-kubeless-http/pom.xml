@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.rawsanj</groupId>
-	<artifactId>boot-kubeless</artifactId>
-	<version>0.1.0</version>
+	<artifactId>boot-kubeless-http</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>boot-kubeless</name>
-	<description>Spring Boot project for Custom Kubeless Runtime</description>
+	<name>boot-kubeless-http</name>
+	<description>Spring Boot project for Custom Kubeless Runtime with HTTP trigger</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -76,6 +76,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

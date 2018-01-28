@@ -1,13 +1,13 @@
-package com.github.rawsanj.kube;
+package com.github.rawsanj.kubehttp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BootKubelessApplication {
+public class BootKubelessHttpApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootKubelessApplication.class, args);
+		SpringApplication.run(BootKubelessHttpApplication.class, args);
 	}
 
 }

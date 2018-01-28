@@ -1,12 +1,9 @@
-package com.github.rawsanj.kube;
+package com.github.rawsanj.kubehttp;
 
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.Arrays;
-import java.util.List;
 
 @Configuration
 public class InitDataOnFuncStart {
@@ -20,11 +17,7 @@ public class InitDataOnFuncStart {
     @Bean
     ApplicationRunner addSomeDataOnFuncStartUp(){
         return applicationArguments -> {
-            List<Language> languages = Arrays.asList(new Language("Java", 4f),
-                                                        new Language("C#", 2f),
-                                                        new Language("JavaScript", 3f),
-                                                        new Language("Kotlin", 3.5f));
-            languageRepository.save(languages);
+            languageRepository.save(new Language("Java", 5f));
         };
     }
 }

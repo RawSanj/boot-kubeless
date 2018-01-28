@@ -1,0 +1,12 @@
+# Update Health End-point and Enable Metrics End-point to be in compliance with kubeless >> https://github.com/kubeless/kubeless/blob/master/docs/runtimes.md
+endpoints:
+  health:
+    id: healthz
+  metrics:
+    sensitive: false
+
+kubeless:
+  kafka:
+    group: Boot-${TOPIC_NAME}
+    server-address: ${KUBELESS_KAFKA_SVC}.${KUBELESS_KAFKA_NAMESPACE}:9092
+    topic: ${TOPIC_NAME}
