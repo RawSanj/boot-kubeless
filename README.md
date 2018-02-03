@@ -38,7 +38,7 @@ $ mvn spring-boot:run
 
 Build and run the **boot-kubeless-kafka** application:
 
-**Note: ** Download and Install [Kafka]. Set the Kafka Server Address and Topic name in `application.yml` file.  
+**Note:** Download and Install [Kafka]. Set the Kafka Server Address and Topic name in `application.yml` file.  
 ```sh
 $ cd boot-kubeless-kafka
 
